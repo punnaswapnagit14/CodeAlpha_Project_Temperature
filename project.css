@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #7f15e3;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.temp_container {
+    min-width: 630px;
+    width: 60vw;
+    min-height: 340px;
+    height: 100vh;
+    border-radius: 36px;
+    background-color: #e0e0e0;
+
+    box-shadow: 5px 5px 9px #a4a4a4,
+        -5px -5px 9px #ffffff;
+    
+    margin: 20px;
+    padding: 80px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 31px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 5px 5px 8px #a1a1a1,
+        -5px -5px 8px #ffffff;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    height: 86px;
+    
+
+}
+.fa-temperature-high{
+    font-size:30px;
+    margin-right: 18px;
+}
+.text_symbol{
+    height:86px;
+    display: flex;
+    margin-top:40px;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--primary-color);
+    padding:0 20px;
+    font-size:30px;
+    font-weight: bold;
+    
+    border-radius: 36px;
+    box-shadow: 5px 5px 8px #a1a1a1,
+        -5px -5px 8px #ffffff;
+}
+
+.temp_icon{
+    font-size:40px;
+    margin-right: 18px;
+
+}
+
+.input {
+    padding:10px;
+    font-weight: bold;
+    border:none;
+    border-radius:36px;
+    box-shadow:nset 6px 6px 4px #c5c5c5;
+    inset: -6px -6px 4px #fbfbfb;
+    outline: none;
+    background: #e0e0e0;
+    
+
+
+}
+.input_temperature{
+    margin-top:100px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.text_celsius,
+.text_fahrenheit{
+
+    font-size:20px;
+    margin-bottom: 30px;
+    color:#7f15e3;
+    font-weight: 500;
+    color:var (--primary-color);
+    
+
+}
+
+@media (min-width:768px){
+    .temp_container{
+        min-width: 530px;
+        height:80%;
+    }
+    .header{
+        font-size:20px;
+    }
+    .fa-temperature-high{
+        font-size: 50px;
+    }
+    .text_symbol{
+        height:auto;
+        font-size:40px;
+    }
+    .temp_icon{
+        font-size:40px;
+    }
+    .input_temperature{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .celsius{
+        width:100px;
+        margin:30px;
+
+    }
+    .fahrenheit{
+        width:120px;
+        margin:30px;
+    }
+    @media (min-width:433px){
+        .temp_container{
+            max-width:300px;
+        }
+    }
+}
+
+.heading{
+    font-size:30px;
+    color:#156be3;
+    
+    font-family: "Roboto";
+    font-weight: bold;
+    padding:10px;
+
+    
+}
+.icon{
+    color:#156be3;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
